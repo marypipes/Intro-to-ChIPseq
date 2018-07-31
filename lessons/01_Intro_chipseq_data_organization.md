@@ -69,6 +69,12 @@ Next we will start an interactive session on O2 with 2 cores (add the `-n 2`):
 $ srun --pty -p short -t 0-12:00 --mem 8G -n 2 --reservation=HBC bash
 ```
 
+We have the `--reservation` argument specified for class as we have a set of dedicated computers so that the commands run quickly. When you start an interactive session outside of class you can use the command without that argument:
+
+```bash
+$ srun --pty -p short -t 0-12:00 --mem 8G -n 2 bash
+```
+
 Make sure that your command prompt is now preceded by a character string that contains the word "compute".
 
 ## Data Management
